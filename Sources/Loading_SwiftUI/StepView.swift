@@ -13,7 +13,7 @@ public struct StepView: View {
     public var body: some View {
         VStack{
             ProgressView(value: manager.progress)
-                .frame(width: 50, height: 50)
+                .frame(width: 60, height: 60)
                 .progressViewStyle(GaugeProgressStyle(strokeColor: manager.accentColor))
             
             if let status = manager.text{

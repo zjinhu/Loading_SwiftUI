@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
-
+import Loading_SwiftUI
 @main
 struct ExampleApp: App {
+    @StateObject var ob = LoadingManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ob)
         }
     }
 }
