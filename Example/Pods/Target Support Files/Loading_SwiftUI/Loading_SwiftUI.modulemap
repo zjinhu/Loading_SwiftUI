@@ -1,0 +1,6 @@
+framework module Loading_SwiftUI {
+  umbrella header "Loading_SwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

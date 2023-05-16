@@ -1,0 +1,16 @@
+PODS:
+  - Loading_SwiftUI (0.1.0)
+
+DEPENDENCIES:
+  - Loading_SwiftUI (from `../`)
+
+EXTERNAL SOURCES:
+  Loading_SwiftUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Loading_SwiftUI: 4c070fd91027464e589aab332dd899c251951562
+
+PODFILE CHECKSUM: c09ab0cda33a147fca8ce7fcd142cf1dd84b2b36
+
+COCOAPODS: 1.12.1
