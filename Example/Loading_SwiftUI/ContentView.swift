@@ -109,7 +109,7 @@ struct ContentView: View {
                 Button {
 
                     loading.text = nil
-                    loading.showFailed()
+                    loading.showFail()
   
                 } label: {
                     Text("Failed No Text")
@@ -118,7 +118,7 @@ struct ContentView: View {
                 Button {
 
                     loading.text = "Please wait..."
-                    loading.showFailed()
+                    loading.showFail()
        
                 } label: {
                     Text("Failed Short Text")
@@ -127,7 +127,7 @@ struct ContentView: View {
                 Button {
 
                     loading.text = "Please wait. We need some more time to work out this situation."
-                    loading.showFailed()
+                    loading.showFail()
          
                 } label: {
                     Text("Failed Longer text")

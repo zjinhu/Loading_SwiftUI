@@ -1,5 +1,5 @@
 //
-//  LoadingView.swift
+//  GaugeProgressView.swift
 //  Toast
 //
 //  Created by iOS on 2023/4/27.
@@ -7,31 +7,29 @@
 
 import SwiftUI
 
-public struct LoadingView<Content: View>: View {
-    public typealias ContentBuilder = (_ isActive: Bool) -> Content
-    private let content: ContentBuilder
-    //绑定显示状态
-    @Binding private var isActive: Bool
- 
-    public init( isActive: Binding<Bool>, @ViewBuilder content: @escaping ContentBuilder ) {
-        _isActive = isActive
-        self.content = content
-    }
+public struct LoadingView: View {
+    @EnvironmentObject var manager: LoadingManager
     
     public var body: some View {
-        ZStack{
-            Color.black
-                .opacity(0.3)
-                .ignoresSafeArea()
+        VStack{
+            ProgressView()
+                .scaleEffect(2.5)
+                .frame(width: 50, height: 50)
+                .progressViewStyle(CircularProgressViewStyle(tint: manager.accentColor))
             
-            content(isActive)
-                .frame(minWidth: 80, minHeight: 80)
-                .background(BlurView())
-                .cornerRadius(10)
-                .animation(.spring())
-                .padding(100)
+            if let status = manager.text{
+                Text("\(status)")
+                    .font(manager.textFont)
+                    .foregroundColor(manager.textColor)
+            }
         }
-        .opacity(!isActive ? 0 : 1)
+        .padding(10)
     }
- 
+}
+
+struct LoadingView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoadingView()
+            .environmentObject(LoadingManager())
+    }
 }

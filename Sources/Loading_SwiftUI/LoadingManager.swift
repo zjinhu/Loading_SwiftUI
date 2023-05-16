@@ -13,7 +13,7 @@ public extension View {
                                    content: @escaping () -> Content) -> some View {
         ZStack{
             self
-            LoadingView(isActive: isActive, content: { _ in content() })
+            ContainerView(isActive: isActive, content: { _ in content() })
         }
     }
     ///添加loading,也可以WindowGroup里给ContentView添加
@@ -67,13 +67,13 @@ extension LoadingManager {
     //展示自定义Loading//自己可以重写替换
     public func showLoading(){
         show {
-            LoadProgressView()
+            LoadingView()
         }
     }
     //展示自定义Progress//自己可以重写替换
     public func showProgress(){
         show {
-            GaugeProgressView()
+            StepView()
         }
     }
     //展示自定义Success//自己可以重写替换
@@ -84,9 +84,9 @@ extension LoadingManager {
         dismissDelay()
     }
     //展示自定义Failed//自己可以重写替换
-    public func showFailed(){
+    public func showFail(){
         show {
-            FailedView()
+            FailView()
         }
         dismissDelay()
     }
