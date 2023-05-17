@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-public struct SuccessView: View {
+struct SuccessView: View {
     @EnvironmentObject var manager: LoadingManager
-    public var body: some View {
+    var body: some View {
         VStack{
             SuccessShape()
                 .trim(from: 0.0, to: manager.isActive ? 1.0 : 0.0)

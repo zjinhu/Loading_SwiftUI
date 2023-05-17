@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-public struct LoadingView: View {
+struct LoadingView: View {
     @EnvironmentObject var manager: LoadingManager
     
-    public var body: some View {
+    var body: some View {
         VStack{
             ProgressView()
                 .scaleEffect(2.5)

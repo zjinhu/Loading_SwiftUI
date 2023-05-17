@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-public struct StepView: View {
+struct StepView: View {
     @EnvironmentObject var manager: LoadingManager
     
-    public var body: some View {
+    var body: some View {
         VStack{
             ProgressView(value: manager.progress)
                 .frame(width: 60, height: 60)

@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-public struct FailView: View {
+struct FailView: View {
     @EnvironmentObject var manager: LoadingManager
     @State private var isDrawn = false
-    public var body: some View {
+    var body: some View {
         VStack{
             XShape()
                 .trim(from: 0.0, to: manager.isActive ? 1.0 : 0.0)

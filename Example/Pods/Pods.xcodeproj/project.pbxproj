@@ -45,18 +45,18 @@
 		55819B5EA53CC103BAF377136520B6B3 /* Loading_SwiftUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Loading_SwiftUI.modulemap; sourceTree = "<group>"; };
 		6015A5D6ECE2A28F471DBFE41ECC5B57 /* ContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = Sources/Loading_SwiftUI/ContainerView.swift; sourceTree = "<group>"; };
 		624B7642C6EC044021B94BE4AB85EEAC /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Sources/Loading_SwiftUI/BlurView.swift; sourceTree = "<group>"; };
-		6D1EECAA9858A30D8F68AB13973EE7EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6D1EECAA9858A30D8F68AB13973EE7EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
 		7AC842547A587DC3446F7A780066D22C /* Loading_SwiftUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Loading_SwiftUI-dummy.m"; sourceTree = "<group>"; };
 		82C2C47390CF7294B19DC5485D9250DA /* Loading_SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loading_SwiftUI.release.xcconfig; sourceTree = "<group>"; };
 		8A3BC20B180556D93E4C52D7301893D9 /* Loading_SwiftUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Loading_SwiftUI; path = Loading_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA8F4CA440FA13BC8D3EE8E55106526 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Sources/Loading_SwiftUI/LoadingView.swift; sourceTree = "<group>"; };
-		9C61FFA66A06E1E32D78C62DA1A3EC46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C61FFA66A06E1E32D78C62DA1A3EC46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A95FFD6DACEB3312EAD3B77D22CC455A /* SuccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuccessView.swift; path = Sources/Loading_SwiftUI/SuccessView.swift; sourceTree = "<group>"; };
 		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		AFFA691F70C9A7995AA680733B5162D2 /* Loading_SwiftUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Loading_SwiftUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFFA691F70C9A7995AA680733B5162D2 /* Loading_SwiftUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Loading_SwiftUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B158D3DC106AE64D08F75EB3F0C04D6E /* Loading_SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loading_SwiftUI.debug.xcconfig; sourceTree = "<group>"; };
 		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C82EB88C98B4ABDD821CC2A494BE35EC /* Loading_SwiftUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loading_SwiftUI-umbrella.h"; sourceTree = "<group>"; };
@@ -88,10 +88,10 @@
 		08F90B10D3CD96F3504AF9A16779909E /* Loading_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				179D97AE3512540BD95E6B4044C99E6B /* LoadingManager.swift */,
 				624B7642C6EC044021B94BE4AB85EEAC /* BlurView.swift */,
 				6015A5D6ECE2A28F471DBFE41ECC5B57 /* ContainerView.swift */,
 				4EBAB124200F61DF3FCE1ABB0CFBA523 /* FailView.swift */,
-				179D97AE3512540BD95E6B4044C99E6B /* LoadingManager.swift */,
 				9AA8F4CA440FA13BC8D3EE8E55106526 /* LoadingView.swift */,
 				3DC2BFF706B255D4572BBFAF0C36790B /* StepView.swift */,
 				A95FFD6DACEB3312EAD3B77D22CC455A /* SuccessView.swift */,

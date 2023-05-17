@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-public struct ContainerView<Content: View>: View {
-    public typealias ContentBuilder = (_ isActive: Bool) -> Content
+struct ContainerView<Content: View>: View {
+    typealias ContentBuilder = (_ isActive: Bool) -> Content
     private let content: ContentBuilder
     //绑定显示状态
     @Binding private var isActive: Bool
  
-    public init( isActive: Binding<Bool>, @ViewBuilder content: @escaping ContentBuilder ) {
+    init( isActive: Binding<Bool>, @ViewBuilder content: @escaping ContentBuilder ) {
         _isActive = isActive
         self.content = content
     }
     
-    public var body: some View {
+    var body: some View {
         ZStack{
             Color.black
                 .opacity(0.3)
