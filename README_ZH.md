@@ -13,7 +13,7 @@
 
 
 
-Loading_SwiftUI is a loading pop-up tool developed based on SwiftUI. It has several built-in styles, including Loading, Progress, Success, and Fail. Style reference [ProgressHUD](https://github.com/relatedcode/ProgressHUD).
+Loading_SwiftUI是基于SwiftUI开发的Loading弹窗工具，内置了几个样式，目前有 Loading，Progress，Success，Fail。样式参考[ProgressHUD](https://github.com/relatedcode/ProgressHUD) 。
 
 
 
@@ -26,7 +26,7 @@ loading.showFail()
 loading.dismiss()
 ```
 
-You can also customize your own Loading style, without any intrusion, no inheritance, completely native, just need to extend the method of the controller
+也可以自定义你自己的Loading样式，无任何侵入，无继承，完全原生，只需要扩展一下控制器的方法就可以
 
 ```swift
 extension LoadingManager {
@@ -39,9 +39,9 @@ extension LoadingManager {
 }
 ```
 
-## Usage
+## 用法
 
-Create a controller on the page that needs to pop up Toast
+在需要弹出Toast的页面创建控制器
 
 ```swift
     @EnvironmentObject private var loading: LoadingManager
@@ -49,19 +49,19 @@ Create a controller on the page that needs to pop up Toast
     @StateObject var loading = LoadingManager()
 ```
 
-Add a controller to the page
+页面内添加控制器
 
 ```
 .addLoading(loading)
 ```
 
-Control the position where Toast pops up, and then call the show method
+控制Toast弹出的位置，然后调用show方法即可
 
 ```
 loading.showLoading()
 ```
 
-controller
+控制器
 
 ```swift
     //HUD提示
@@ -79,34 +79,34 @@ controller
 
 
 
-## Install
+## 安装
 
-### Cocoapods
+### cocoapods
 
-1. Add `pod 'Loading_SwiftUI'` to Podfile
+1.在 Podfile 中添加 `pod 'Loading_SwiftUI'`
 
-2. Execute `pod install or pod update`
+2.执行 `pod install 或 pod update`
 
-3. Import `import Loading_SwiftUI`
+3.导入 `import Loading_SwiftUI`
 
 ### Swift Package Manager
 
-Starting from Xcode 11, the Swift Package Manager is integrated, which is very convenient to use. Loading_SwiftUI also supports integration via the Swift Package Manager.
+从 Xcode 11 开始，集成了 Swift Package Manager，使用起来非常方便。Loading_SwiftUI 也支持通过 Swift Package Manager 集成。
 
-Select `File > Swift Packages > Add Pacakage Dependency` in Xcode's menu bar, and enter in the search bar
+在 Xcode 的菜单栏中选择 `File > Swift Packages > Add Pacakage Dependency`，然后在搜索栏输入
 
-`https://github.com/jackiehu/Loading_SwiftUI`, you can complete the integration
+`https://github.com/jackiehu/Loading_SwiftUI`，即可完成集成
 
-### Manual integration
+### 手动集成
 
-Loading_SwiftUI also supports manual integration, just drag the SwiftMediator folder in the Sources folder into the project that needs to be integrated
+Loading_SwiftUI 也支持手动集成，只需把Sources文件夹中的SwiftMediator文件夹拖进需要集成的项目即可
 
 
-## Author
+## 作者
 
 jackiehu, 814030966@qq.com
 
-## More brick tools to speed up APP development
+## 更多砖块工具加速APP开发
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=jackiehu&repo=SwiftMediator&theme=radical&locale=cn)](https://github.com/jackiehu/SwiftMediator)
 
